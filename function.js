@@ -2,7 +2,7 @@ import { PDFDocument, rgb, StandardFonts } from 'pdf-lib'
 import fetch from 'node-fetch'
 import { upload } from '@glideapps/plugin-uploader'
 
-export default async function main({ pdfUrl, headerText }) {
+export default async function ({ pdfUrl, headerText }) {
   const existingPdfBytes = await fetch(pdfUrl).then(r => r.arrayBuffer())
   const pdfDoc = await PDFDocument.load(existingPdfBytes)
   const font = await pdfDoc.embedFont(StandardFonts.Helvetica)
