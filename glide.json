@@ -1,23 +1,21 @@
 {
   "name": "Add Header to PDF",
-  "description": "Adds a text header to each page of a PDF from a file URL.",
+  "description": "Adds a header text to each page of a PDF from a file URL.",
+  "source": "function.js",
   "parameters": [
     {
       "name": "pdfUrl",
       "type": "string",
-      "required": true,
-      "description": "The URL of the PDF file"
+      "required": true
     },
     {
       "name": "headerText",
       "type": "string",
-      "required": true,
-      "description": "Text to add at the top of each page"
+      "required": true
     }
   ],
   "result": {
     "name": "outputPdfUrl",
-    "type": "string",
-    "description": "The URL of the modified PDF with headers"
+    "type": "string"
   }
 }
