@@ -1,0 +1,23 @@
+{
+  "name": "Add Header to PDF",
+  "description": "Adds a text header to each page of a PDF from a file URL.",
+  "parameters": [
+    {
+      "name": "pdfUrl",
+      "type": "string",
+      "required": true,
+      "description": "The URL of the PDF file"
+    },
+    {
+      "name": "headerText",
+      "type": "string",
+      "required": true,
+      "description": "Text to add at the top of each page"
+    }
+  ],
+  "result": {
+    "name": "outputPdfUrl",
+    "type": "string",
+    "description": "The URL of the modified PDF with headers"
+  }
+}
