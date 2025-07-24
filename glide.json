@@ -1,23 +1,21 @@
-[
-	{
-		"kind": "column",
-		"name": "Add Header to PDF Files",
-		"description": "Allows you to add header text to the pdf file uploaded on Glide",
-		"author": "CorProDoc",
-		"params": [
-					{
-				"name": "pdfUrl",
-				"displayName": "PDF URL",
-				"type": "string"
-			},
-			{
-				"name": "headerText",
-				"displayName": "Header Text to Add",
-				"type": "string"
-			}
-		],
-		"result": {
-			"type": "string"
-		}
-	}
-]
+{
+  "name": "Add Header to PDF",
+  "description": "Adds a header text to each page of a PDF from a file URL.",
+  "source": "function.js",
+  "parameters": [
+    {
+      "name": "pdfUrl",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "headerText",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "result": {
+    "name": "outputPdfUrl",
+    "type": "string"
+  }
+}
